@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+@import './setting/_setting';
+
+@import './mixin/mixin';
+
+@import "foundation/reset";
+@import "foundation/form";
+@import "foundation/table";
+
+@import './modules/component';
+@import './modules/layout';
+
+@import './page/home/header';
+@import './page/home/main';
+@import './page/home/footer';
+@import './page/contact/contact';
+
+@import "library/animate";
+

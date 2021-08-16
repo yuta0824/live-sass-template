@@ -1,0 +1,67 @@
+/*===============================
+共通レイアウト
+===============================*/
+
+/*----------- inner ---------------*/
+.l-inner {
+  max-width: $layout-inner - $pd-pc * 2;
+  height: inherit;
+  margin: 0 auto;
+  padding: 0 $pd-pc;
+
+  @include mq("tab") {
+    padding-right: $pd-tab;
+    padding-left: $pd-tab;
+  }
+
+  @include mq("sp") {
+    padding-right: $pd-sp;
+    padding-left: $pd-sp;
+  }
+}
+
+.hoge {
+  font-size: vw(500, 17);
+  letter-spacing: lsp(1.5, 16);
+}
+
+/*------------ フォント ----------------*/
+.l-serif {
+  font-family: "Noto Serif JP";
+}
+
+// pcのみ表示
+.is-pc {
+  @include mq("sp") {
+    display: none;
+  }
+
+  @include mq("tab") {
+    display: none;
+  }
+}
+
+// tabとpcで表示
+.is-tab-pc {
+  @include mq("sp") {
+    display: none;
+  }
+}
+
+// tabのみ表示
+.is-tab {
+  @include mq("pc") {
+    display: none;
+  }
+
+  @include mq("sp") {
+    display: none;
+  }
+}
+
+// spのみ表示
+.is-sp {
+  @include mq("tab-pc") {
+    display: none;
+  }
+}
