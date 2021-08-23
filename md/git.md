@@ -1,6 +1,3 @@
-## git参考サイト
-https://flex-box.net/git/
-
 ## リポジトリ作成
 git init
 
@@ -18,9 +15,16 @@ githubにリモートリポジトリを作成
 プライベートで作成
 コードをコピーしてきて
 ターミナルでコマンド叩く
+git remote add origin https://github.com/ユーザー名/リポジトリ名.git
+git branch -M main
+git push -u origin main
+確認コマンド git remote -v
 
 ## ローカルリポジトリでコミットしたものをリモートリポジトリにプッシュする
 git push origin main
+
+## リモートリポジトリでコミットしたものをローカルリポジトリでプルする
+git pull
 
 ## develpブランチに移動する
 git checkout develop
