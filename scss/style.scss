@@ -1,21 +1,28 @@
 @charset "UTF-8";
 
-
+// setting
 @import './setting/_setting';
 
+// mixin
 @import './mixin/mixin';
 
-@import "foundation/reset";
+// foundation
+@import "foundation/base";
 @import "foundation/form";
 @import "foundation/table";
 
+// modules
+@import './modules/utility';
 @import './modules/component';
 @import './modules/layout';
+@import './modules/project';
 
+// page
 @import './page/home/header';
 @import './page/home/main';
 @import './page/home/footer';
 @import './page/contact/contact';
 
+// library
 @import "library/animate";
 
